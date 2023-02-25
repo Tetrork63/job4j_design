@@ -70,7 +70,7 @@ public class SimpleArrayList<T> implements SimpleList<T> {
                 if (modCount != expectedCount) {
                     throw new ConcurrentModificationException();
                 }
-                return index < size();
+                return index < size;
             }
 
             @Override
